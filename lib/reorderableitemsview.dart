@@ -545,7 +545,7 @@ class _ReorderableListContentState extends State<_ReorderableListContent>
                       // These constraints will limit the cross axis of the drawn widget.
                       constraints: newConstraints,
                       child: Material(
-                        elevation: 6.0,
+                        elevation: 0.0,
                         child: toWrapWithSemantics,
                       ),
                     ),
@@ -553,7 +553,7 @@ class _ReorderableListContentState extends State<_ReorderableListContent>
                   ? const SizedBox()
                   : toWrapWithSemantics,
               childWhenDragging: const SizedBox(),
-              dragAnchor: DragAnchor.child,
+              
               onDragStarted: onDragStarted,
               // When the drag ends inside a DragTarget widget, the drag
               // succeeds, and we reorder the widget into position appropriately.
@@ -578,7 +578,7 @@ class _ReorderableListContentState extends State<_ReorderableListContent>
                       // These constraints will limit the cross axis of the drawn widget.
                       constraints: newConstraints,
                       child: Material(
-                        elevation: 6.0,
+                        elevation: 0.0,
                         child: toWrapWithSemantics,
                       ),
                     ),
@@ -586,7 +586,7 @@ class _ReorderableListContentState extends State<_ReorderableListContent>
                   ? const SizedBox()
                   : toWrapWithSemantics,
               childWhenDragging: const SizedBox(),
-              dragAnchor: DragAnchor.child,
+              
               onDragStarted: onDragStarted,
               // When the drag ends inside a DragTarget widget, the drag
               // succeeds, and we reorder the widget into position appropriately.
